@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New order - Furniture Order Manager</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Create a new order</h1>
+    <form id="orderForm">
+      <label for="orderId">Order code</label>
+      <input type="text" id="orderId" name="orderId" required>
+
+      <label for="fullName">Customer full name</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="address">Customer address</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="email">Customer email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Customer phone number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <h2>Products</h2>
+      <p>Tick a product to enable its quantity.</p>
+
+      <div class="product-row">
+        <input type="checkbox" class="product-check" id="check_sofa" data-target="quantity_sofa">
+        <label for="check_sofa">Sofa - 599.00 EUR</label>
+        <input type="number" id="quantity_sofa" name="quantities[sofa]" min="1" value="1" disabled>
+      </div>
+
+      <div class="product-row">
+        <input type="checkbox" class="product-check" id="check_dining_table" data-target="quantity_dining_table">
+        <label for="check_dining_table">Dining table - 349.00 EUR</label>
+        <input type="number" id="quantity_dining_table" name="quantities[dining_table]" min="1" value="1" disabled>
+      </div>
+
+      <div class="product-row">
+        <input type="checkbox" class="product-check" id="check_wardrobe" data-target="quantity_wardrobe">
+        <label for="check_wardrobe">Wardrobe - 429.00 EUR</label>
+        <input type="number" id="quantity_wardrobe" name="quantities[wardrobe]" min="1" value="1" disabled>
+      </div>
+
+      <div class="product-row">
+        <input type="checkbox" class="product-check" id="check_bed" data-target="quantity_bed">
+        <label for="check_bed">Double bed - 279.00 EUR</label>
+        <input type="number" id="quantity_bed" name="quantities[bed]" min="1" value="1" disabled>
+      </div>
+
+      <div id="orderMessage"></div>
+
+      <div class="button-group">
+        <button type="submit">Send order</button>
+        <a class="button button-secondary" href="menu.html">Back to operations menu</a>
+        <a class="button button-secondary" href="index.html">Back to start</a>
+      </div>
+    </form>
+  </main>
+  <script src="js/new-order.js"></script>
+</body>
+</html>

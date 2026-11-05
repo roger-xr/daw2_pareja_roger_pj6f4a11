@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View orders - Furniture Order Manager</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>View orders</h1>
+    <label for="operation">Choose what you want to see</label>
+    <select id="operation">
+      <option value="../server/get-all-orders.php">All the orders</option>
+      <option value="view-order-form.html">One order by its code</option>
+    </select>
+
+    <div class="button-group">
+      <a class="button button-secondary" href="menu.html">Back to operations menu</a>
+      <a class="button button-secondary" href="index.html">Back to start</a>
+      <button type="button" id="goButton">Open</button>
+    </div>
+  </main>
+  <script src="js/navigate.js"></script>
+</body>
+</html>

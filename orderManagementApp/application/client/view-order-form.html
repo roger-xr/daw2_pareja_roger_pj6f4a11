@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View one order - Furniture Order Manager</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>View one order</h1>
+    <form id="searchForm" method="get" action="../server/get-order.php">
+      <label for="id">Order code</label>
+      <input type="text" id="id" name="id">
+
+      <div id="searchMessage"></div>
+
+      <div class="button-group">
+        <button type="submit">Search order</button>
+        <a class="button button-secondary" href="view-orders-menu.html">Back to view orders</a>
+        <a class="button button-secondary" href="menu.html">Back to operations menu</a>
+        <a class="button button-secondary" href="index.html">Back to start</a>
+      </div>
+    </form>
+  </main>
+  <script src="js/view-order-form.js"></script>
+</body>
+</html>
