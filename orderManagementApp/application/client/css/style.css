@@ -148,3 +148,6 @@ th {
   background-color: var(--color-primary);
   color: #ffffff;
 }
+
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ccc; padding: 6px; text-align: left; vertical-align: top; }
